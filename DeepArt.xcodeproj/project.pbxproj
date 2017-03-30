@@ -12,9 +12,15 @@
 		657DEA3C1E71B393008173B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3A1E71B393008173B2 /* Main.storyboard */; };
 		657DEA3E1E71B393008173B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3D1E71B393008173B2 /* Assets.xcassets */; };
 		657DEA411E71B393008173B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3F1E71B393008173B2 /* LaunchScreen.storyboard */; };
+		65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A64A731E8CE926001DD5ED /* startPageViewController.swift */; };
+		65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */; };
+		65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */; };
+		65DEEE131E8B99B20014C6C9 /* transformedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */; };
+		FD867E55FF544F6EF0F535EC /* Pods_DeepArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C7F0BF9959A23D29BA5742C /* Pods-DeepArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt.release.xcconfig"; sourceTree = "<group>"; };
 		657DEA331E71B392008173B2 /* DeepArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657DEA361E71B393008173B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657DEA381E71B393008173B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		657DEA3D1E71B393008173B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657DEA401E71B393008173B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657DEA421E71B393008173B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A64A731E8CE926001DD5ED /* startPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startPageViewController.swift; sourceTree = "<group>"; };
+		65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingsTableViewController.swift; sourceTree = "<group>"; };
+		65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transformedTableViewController.swift; sourceTree = "<group>"; };
+		66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD867E55FF544F6EF0F535EC /* Pods_DeepArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				657DEA351E71B392008173B2 /* DeepArt */,
 				657DEA341E71B392008173B2 /* Products */,
+				6658D61CBA7BEC4772A265F2 /* Pods */,
+				6A583B4F0EDAA085B3A8B768 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +72,32 @@
 				657DEA361E71B393008173B2 /* AppDelegate.swift */,
 				657DEA381E71B393008173B2 /* ViewController.swift */,
 				657DEA3A1E71B393008173B2 /* Main.storyboard */,
+				65A64A731E8CE926001DD5ED /* startPageViewController.swift */,
 				657DEA3D1E71B393008173B2 /* Assets.xcassets */,
 				657DEA3F1E71B393008173B2 /* LaunchScreen.storyboard */,
 				657DEA421E71B393008173B2 /* Info.plist */,
+				65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */,
+				65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */,
+				65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */,
 			);
 			path = DeepArt;
+			sourceTree = "<group>";
+		};
+		6658D61CBA7BEC4772A265F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */,
+				3C7F0BF9959A23D29BA5742C /* Pods-DeepArt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A583B4F0EDAA085B3A8B768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657DEA451E71B393008173B2 /* Build configuration list for PBXNativeTarget "DeepArt" */;
 			buildPhases = (
+				05C9E4949155DE1B6B880D64 /* [CP] Check Pods Manifest.lock */,
 				657DEA2F1E71B392008173B2 /* Sources */,
 				657DEA301E71B392008173B2 /* Frameworks */,
 				657DEA311E71B392008173B2 /* Resources */,
+				9232CD41871DFCC1C833921E /* [CP] Embed Pods Frameworks */,
+				9638AC270BC092E49FD1503D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +170,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05C9E4949155DE1B6B880D64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9232CD41871DFCC1C833921E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9638AC270BC092E49FD1503D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		657DEA2F1E71B392008173B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				657DEA391E71B393008173B2 /* ViewController.swift in Sources */,
+				65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */,
 				657DEA371E71B393008173B2 /* AppDelegate.swift in Sources */,
+				65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */,
+				65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */,
+				65DEEE131E8B99B20014C6C9 /* transformedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +347,7 @@
 		};
 		657DEA461E71B393008173B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DeepArt/Info.plist;
@@ -268,6 +360,7 @@
 		};
 		657DEA471E71B393008173B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7F0BF9959A23D29BA5742C /* Pods-DeepArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DeepArt/Info.plist;
@@ -297,6 +390,7 @@
 				657DEA471E71B393008173B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
