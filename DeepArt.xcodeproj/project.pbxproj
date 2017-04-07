@@ -135,6 +135,7 @@
 				TargetAttributes = {
 					657DEA321E71B392008173B2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XV2QHSQ5K4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,6 +351,7 @@
 			baseConfigurationReference = FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV2QHSQ5K4;
 				INFOPLIST_FILE = DeepArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guanjhensu.DeepArt;
@@ -363,6 +365,7 @@
 			baseConfigurationReference = 3C7F0BF9959A23D29BA5742C /* Pods-DeepArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV2QHSQ5K4;
 				INFOPLIST_FILE = DeepArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guanjhensu.DeepArt;
