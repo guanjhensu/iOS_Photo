@@ -33,10 +33,12 @@ class ViewController: UIViewController {
             controller.newImage = imageView.image
         }
     }
+
     
-    // no access to camera in simulator, so use photoLibrary instead 
+    // no access to camera in simulator, so use photoLibrary instead
     // remember to set info -> Privacy - Photo Library Usage Description
     @IBAction func takePicture(_ sender: UIButton) {
+
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = false

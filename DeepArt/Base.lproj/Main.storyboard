@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2ds-xP-3FM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F3L-Ly-9Hl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="483" width="375" height="670"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="Fo8-A9-FEO" kind="embed" identifier="chooseOnePainting" id="ObY-et-5pI"/>
+                                    <segue destination="Fo8-A9-FEO" kind="embed" identifier="chooseOnePainting" id="UP6-Xm-VQ8"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -237,7 +237,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="chooseEgonSchiele:" destination="Fo8-A9-FEO" eventType="touchUpInside" id="vZp-Gb-fdV"/>
-                                                        <segue destination="F3L-Ly-9Hl" kind="show" identifier="sendChosenPainging" id="zcx-bc-Zg9"/>
+                                                        <segue destination="F3L-Ly-9Hl" kind="show" identifier="sendChosenPainging" id="eXG-fu-Jlr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -273,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTt-xN-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3591" y="1917"/>
+            <point key="canvasLocation" x="3500" y="1905"/>
         </scene>
         <!--Transformed Table View Controller-->
         <scene sceneID="Bal-Pd-sDn">
@@ -433,6 +433,10 @@
                                                     <rect key="frame" x="1" y="8" width="377" height="2566"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-rj-hUM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="378" height="375"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -444,15 +448,18 @@
                             <outlet property="delegate" destination="F3L-Ly-9Hl" id="l4S-ac-meu"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="transformedImageView" destination="fnx-rj-hUM" id="xnT-EE-gfy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWx-vi-cLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4277.6000000000004" y="1104.6476761619192"/>
+            <point key="canvasLocation" x="4845.6000000000004" y="1096.5517241379312"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Paintings Table View Controller-->
         <scene sceneID="KBo-ap-dc1">
             <objects>
-                <tableViewController id="5tP-vt-jJZ" sceneMemberID="viewController">
+                <tableViewController id="5tP-vt-jJZ" customClass="PaintingsTableViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tw1-f4-YuM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,7 +609,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3A-gJ-xSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4356" y="1918.2908545727139"/>
+            <point key="canvasLocation" x="5820" y="1883"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2gA-La-NcN">
