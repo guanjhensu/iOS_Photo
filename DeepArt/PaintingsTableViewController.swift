@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 
 class PaintingsTableViewController: UITableViewController {
+    
     // receive image from ChooseViewController.swift
     var photoToPaintingsTableViewController: UIImage!{
         didSet {
@@ -21,16 +22,20 @@ class PaintingsTableViewController: UITableViewController {
     
     // for version2 use
     var whichPaintingChosen: String = ""
+    var imageNameGenerated: String = ""
     
     @IBAction func chooseEgonSchiele(_ sender: Any) {
         whichPaintingChosen = "EgonSchieleHouseWithDryingLaundry"
-        upload(image: photoToUpload.image!)
-
+        let randomImageName: String = randomString(length: 5)
+        upload(image: photoToUpload.image!, name: randomImageName)
+        imageNameGenerated = randomImageName
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sendChosenPainging" {
             let controller = segue.destination as! transformedTableViewController
-            // to-do: send data to next page
+            controller.requestImageName = imageNameGenerated
+            // to-do: send painter name to next page
         }
     }
     
@@ -38,6 +43,7 @@ class PaintingsTableViewController: UITableViewController {
         super.viewDidLoad()
         photoToUpload?.image = photoToPaintingsTableViewController
         photoToUpload?.isHidden = false
+        print()
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +51,7 @@ class PaintingsTableViewController: UITableViewController {
     }
     
     // upload photo to server
-    func upload(image: UIImage) {
+    func upload(image: UIImage, name: String) {
         guard let imageData = UIImageJPEGRepresentation(image, 0.5) else {
             print("Could not get JPEG representation of UIImage")
             return
@@ -55,7 +61,7 @@ class PaintingsTableViewController: UITableViewController {
             multipartFormData: { multipartFormData in
                 multipartFormData.append(imageData,
                                          withName: "upload",
-                                         fileName: "image.jpg",
+                                         fileName: name,
                                          mimeType: "image/jpeg")
         },
             to: "http://127.0.0.1:3000",
@@ -69,5 +75,13 @@ class PaintingsTableViewController: UITableViewController {
                     print(encodingError)
                 }
         })
+    }
+    
+    func randomString(length:Int) -> String {
+        var s: String = ""
+        for _ in (1...length) {
+            s.append(String(arc4random()))
+        }
+        return s
     }
 }

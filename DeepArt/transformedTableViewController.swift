@@ -16,41 +16,33 @@ class transformedTableViewController: UITableViewController {
 
     var request: Alamofire.Request?
     var requestHowManyTimes: Int = 0
+    var requestImageName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         load()
-
-        //if let serverURL = URL(string: "http://localhost:8080/transformed/image.jpg") {
-            //transformedImageView.loadImage(url: serverURL)
         
     }
     
-    
     func load(){
-        
-        request = Alamofire.request("http://localhost:8080/transformed/image2.jpg", method: .get)
+        let requestUrl = "http://localhost:3000/transformed/" + requestImageName + ".jpg"
+        request = Alamofire.request( requestUrl, method: .get)
             .downloadProgress { progress in
                 print("Download Progress: \(progress.fractionCompleted)")
             }
             .responseData { response in
                 if let data = response.result.value {
-                    
                     let image = UIImage(data: data)
                     if image != nil {
                         self.transformedImageView.image = image
-                        print("haha!!")
-                        
+                        print("image load success")
                     } else {
-                        print("roor...")
+                        print("image hasn't been generated yet")
                         self.requestHowManyTimes += 1
                         self.requestAgain()
-                        
-                        
-                        
                     }
                 }
         }
-
     }
     
     func requestAgain(){
@@ -59,8 +51,6 @@ class transformedTableViewController: UITableViewController {
         }
     
     }
-
-
     
     
     @IBAction func linkToLeopoldMuseum(_ sender: Any) {
