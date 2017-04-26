@@ -17,6 +17,7 @@
 		65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */; };
 		65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */; };
 		65DEEE131E8B99B20014C6C9 /* transformedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */; };
+		65E448D21EB0589900A15557 /* artistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E448D11EB0589900A15557 /* artistViewController.swift */; };
 		FD867E55FF544F6EF0F535EC /* Pods_DeepArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 		65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingsTableViewController.swift; sourceTree = "<group>"; };
 		65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transformedTableViewController.swift; sourceTree = "<group>"; };
+		65E448D11EB0589900A15557 /* artistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = artistViewController.swift; sourceTree = "<group>"; };
 		66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */,
 				65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */,
 				6561F9B21EAF4FD700AD9244 /* MainPageTableViewController.swift */,
+				65E448D11EB0589900A15557 /* artistViewController.swift */,
 			);
 			path = DeepArt;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				657DEA391E71B393008173B2 /* ViewController.swift in Sources */,
 				65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */,
 				657DEA371E71B393008173B2 /* AppDelegate.swift in Sources */,
+				65E448D21EB0589900A15557 /* artistViewController.swift in Sources */,
 				65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */,
 				6561F9B31EAF4FD700AD9244 /* MainPageTableViewController.swift in Sources */,
 				65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */,
