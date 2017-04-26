@@ -18,6 +18,9 @@
 		65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */; };
 		65DEEE131E8B99B20014C6C9 /* transformedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */; };
 		65E448D21EB0589900A15557 /* artistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E448D11EB0589900A15557 /* artistViewController.swift */; };
+		65E448D41EB0684A00A15557 /* ArtHubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E448D31EB0684A00A15557 /* ArtHubTableViewController.swift */; };
+		65E448D81EB081DF00A15557 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E448D71EB081DF00A15557 /* DetailViewController.swift */; };
+		65E448DA1EB0850B00A15557 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E448D91EB0850B00A15557 /* DimmingPresentationController.swift */; };
 		FD867E55FF544F6EF0F535EC /* Pods_DeepArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingsTableViewController.swift; sourceTree = "<group>"; };
 		65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transformedTableViewController.swift; sourceTree = "<group>"; };
 		65E448D11EB0589900A15557 /* artistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = artistViewController.swift; sourceTree = "<group>"; };
+		65E448D31EB0684A00A15557 /* ArtHubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtHubTableViewController.swift; sourceTree = "<group>"; };
+		65E448D71EB081DF00A15557 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		65E448D91EB0850B00A15557 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		66E948E0FDA1790D37E3D358 /* Pods_DeepArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA74DCF59234C02C6750BCCE /* Pods-DeepArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,20 +79,39 @@
 		657DEA351E71B392008173B2 /* DeepArt */ = {
 			isa = PBXGroup;
 			children = (
+				65E448D61EB0688300A15557 /* styleTransfer */,
+				65E448D51EB0686100A15557 /* artist */,
 				657DEA361E71B393008173B2 /* AppDelegate.swift */,
-				657DEA381E71B393008173B2 /* ViewController.swift */,
 				657DEA3A1E71B393008173B2 /* Main.storyboard */,
-				65A64A731E8CE926001DD5ED /* startPageViewController.swift */,
 				657DEA3D1E71B393008173B2 /* Assets.xcassets */,
 				657DEA3F1E71B393008173B2 /* LaunchScreen.storyboard */,
 				657DEA421E71B393008173B2 /* Info.plist */,
+			);
+			path = DeepArt;
+			sourceTree = "<group>";
+		};
+		65E448D51EB0686100A15557 /* artist */ = {
+			isa = PBXGroup;
+			children = (
+				6561F9B21EAF4FD700AD9244 /* MainPageTableViewController.swift */,
+				65E448D11EB0589900A15557 /* artistViewController.swift */,
+				65E448D31EB0684A00A15557 /* ArtHubTableViewController.swift */,
+				65E448D71EB081DF00A15557 /* DetailViewController.swift */,
+				65E448D91EB0850B00A15557 /* DimmingPresentationController.swift */,
+			);
+			name = artist;
+			sourceTree = "<group>";
+		};
+		65E448D61EB0688300A15557 /* styleTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				65A64A731E8CE926001DD5ED /* startPageViewController.swift */,
 				65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */,
 				65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */,
 				65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */,
-				6561F9B21EAF4FD700AD9244 /* MainPageTableViewController.swift */,
-				65E448D11EB0589900A15557 /* artistViewController.swift */,
+				657DEA381E71B393008173B2 /* ViewController.swift */,
 			);
-			path = DeepArt;
+			name = styleTransfer;
 			sourceTree = "<group>";
 		};
 		6658D61CBA7BEC4772A265F2 /* Pods */ = {
@@ -236,6 +261,9 @@
 				65E448D21EB0589900A15557 /* artistViewController.swift in Sources */,
 				65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */,
 				6561F9B31EAF4FD700AD9244 /* MainPageTableViewController.swift in Sources */,
+				65E448DA1EB0850B00A15557 /* DimmingPresentationController.swift in Sources */,
+				65E448D41EB0684A00A15557 /* ArtHubTableViewController.swift in Sources */,
+				65E448D81EB081DF00A15557 /* DetailViewController.swift in Sources */,
 				65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */,
 				65DEEE131E8B99B20014C6C9 /* transformedTableViewController.swift in Sources */,
 			);

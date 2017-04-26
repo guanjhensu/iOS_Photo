@@ -17,11 +17,11 @@ class artistViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            firstView.isHidden = false
-            seconfView.isHidden = true
-        case 1:
             firstView.isHidden = true
             seconfView.isHidden = false
+        case 1:
+            firstView.isHidden = false
+            seconfView.isHidden = true
         default:
             break;
         }
@@ -31,8 +31,8 @@ class artistViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstView.isHidden = false
-        seconfView.isHidden = true
+        firstView.isHidden = true
+        seconfView.isHidden = false
         // Do any additional setup after loading the view.
     }
 

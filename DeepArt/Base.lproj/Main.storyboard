@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="arp-69-223">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LIy-PG-Qjr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -878,10 +878,10 @@
             </objects>
             <point key="canvasLocation" x="201" y="3197"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Canvas-->
         <scene sceneID="rK7-q4-q1D">
             <objects>
-                <tableViewController id="jgx-ox-rIL" sceneMemberID="viewController">
+                <tableViewController title="Canvas" id="jgx-ox-rIL" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="t8W-a4-zZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -896,12 +896,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MKz-vE-mYD" id="lhi-mT-66E">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="1174"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DeepArt" translatesAutoresizingMaskIntoConstraints="NO" id="eKn-YG-JDT">
-                                                    <rect key="frame" x="8" y="231" width="240" height="786"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -916,12 +910,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ya3-Y1-vad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3620" y="3076"/>
+            <point key="canvasLocation" x="1469.5999999999999" y="2647.826086956522"/>
         </scene>
-        <!--Table View Controller-->
+        <!--ArtHub-->
         <scene sceneID="uBR-zC-NQc">
             <objects>
-                <tableViewController id="7df-oJ-m85" sceneMemberID="viewController">
+                <tableViewController title="ArtHub" id="7df-oJ-m85" customClass="ArtHubTableViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="beZ-Io-m39">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -930,17 +924,135 @@
                         <sections>
                             <tableViewSection id="8cB-Xc-Ig7">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="924" id="fcW-Hj-a4E">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="924"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1447" id="fcW-Hj-a4E">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1447"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fcW-Hj-a4E" id="j1T-X6-bfJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="924"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1447"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egon Schiele, Mutter und Tochter" translatesAutoresizingMaskIntoConstraints="NO" id="Jio-Rx-o61">
-                                                    <rect key="frame" x="8" y="397" width="240" height="519"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_盤古" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-5B-kBL">
+                                                    <rect key="frame" x="60" y="47" width="149" height="125"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2017_千世界" translatesAutoresizingMaskIntoConstraints="NO" id="Q2n-HM-mFL">
+                                                    <rect key="frame" x="218" y="124" width="149" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="千世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCf-20-GPl">
+                                                    <rect key="frame" x="327" y="251" width="34" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="漂泊廣場之五" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywv-wh-NXp">
+                                                    <rect key="frame" x="66" y="363" width="68" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="展覽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPk-Va-Vi4">
+                                                    <rect key="frame" x="28" y="406" width="24" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50091065950000002" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2017_漂泊廣場之五" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-tH-mO4">
+                                                    <rect key="frame" x="60" y="234" width="149" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7g-hr-tat">
+                                                    <rect key="frame" x="10" y="18" width="42" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50091065950920244" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-QS-xOC">
+                                                    <rect key="frame" x="28" y="40" width="24" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50091065950000002" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="盤古" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdc-nf-Oa0">
+                                                    <rect key="frame" x="66" y="174" width="23" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCG-bL-6d3">
+                                                    <rect key="frame" x="10" y="609" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50091065950000002" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2P-Lv-u4N">
+                                                    <rect key="frame" x="28" y="635" width="24" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50091065950000002" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2016_預兆" translatesAutoresizingMaskIntoConstraints="NO" id="nK0-MO-ldZ">
+                                                    <rect key="frame" x="60" y="638" width="149" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2016_迴陣漫步" translatesAutoresizingMaskIntoConstraints="NO" id="gkR-ua-qUL">
+                                                    <rect key="frame" x="218" y="715" width="149" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="迴陣漫步" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLu-Of-fT3">
+                                                    <rect key="frame" x="316" y="842" width="45" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="預兆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-yy-o8t">
+                                                    <rect key="frame" x="66" y="765" width="23" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="機械新秩序 PART 1 — 陳硯平個展" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-ai-Gd4">
+                                                    <rect key="frame" x="58" y="419" width="176" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="機械新秩序 PART 1 — 陳硯平個展" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMs-Bx-muZ">
+                                                    <rect key="frame" x="66" y="555" width="170" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSk-QE-cm4">
+                                                    <rect key="frame" x="60" y="47" width="149" height="141"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="2DL-Gd-a3A" kind="showDetail" id="xnr-3z-gHX"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piw-m6-5ic">
+                                                    <rect key="frame" x="217" y="124" width="158" height="141"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="EYR-ln-1KX" kind="showDetail" id="xsy-Aq-l8l"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ida-4f-cc3">
+                                                    <rect key="frame" x="60" y="234" width="149" height="143"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="A8o-fa-ldk" kind="showDetail" id="LYe-XQ-H0K"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -953,10 +1065,100 @@
                             <outlet property="delegate" destination="7df-oJ-m85" id="ThF-oQ-tVk"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="title1" destination="tdc-nf-Oa0" id="suv-Nb-keZ"/>
+                        <outlet property="title2" destination="MCf-20-GPl" id="jXV-ns-tfZ"/>
+                        <outlet property="title3" destination="Ywv-wh-NXp" id="rrI-hS-N6s"/>
+                        <outlet property="title4" destination="tMs-Bx-muZ" id="Bcx-Pj-cDz"/>
+                        <outlet property="title5" destination="jZy-yy-o8t" id="Bbq-eD-6ze"/>
+                        <outlet property="title6" destination="gLu-Of-fT3" id="b0T-As-xod"/>
+                        <outlet property="work1" destination="dZg-5B-kBL" id="Le3-KP-knU"/>
+                        <outlet property="work2" destination="Q2n-HM-mFL" id="una-4i-MDN"/>
+                        <outlet property="work3" destination="TQR-tH-mO4" id="T2j-CA-DaM"/>
+                        <outlet property="work4" destination="Saf-ai-Gd4" id="92O-Ur-bbx"/>
+                        <outlet property="work5" destination="nK0-MO-ldZ" id="BqC-yI-Qvg"/>
+                        <outlet property="work6" destination="gkR-ua-qUL" id="Vqg-rk-QqI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3x-5t-XcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3645.5999999999999" y="3813.6431784107949"/>
+            <point key="canvasLocation" x="2293.5999999999999" y="2647.826086956522"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dYz-vG-Iw0">
+            <objects>
+                <viewController id="2DL-Gd-a3A" customClass="DetailViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FPD-Ty-OAN"/>
+                        <viewControllerLayoutGuide type="bottom" id="9bJ-GS-4mW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YY4-rt-2V9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1I9-YT-3aw" userLabel="Pop-up View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVo-g7-P6X" userLabel="Close Button">
+                                        <rect key="frame" x="352" y="26" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Delete-48">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50230061349693256" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeDetail:" destination="2DL-Gd-a3A" eventType="touchUpInside" id="Ztj-nd-YzM"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_盤古" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-L7-GPs">
+                                        <rect key="frame" x="0.0" y="49" width="375" height="282"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-k6-fAk">
+                                        <rect key="frame" x="68" y="368" width="238.5" height="183.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">漂白水、壓克力顏料、鋁片、針線串珠拼貼於棉布，裱於仿麻布上。
+ 120.0 × 162.0 cm / 124.0 × 166.0 × 4.0 cm (framed), 2017
+
+在未來，電路板樣式的部落圖騰，成為宗教意識、神話、傳說的根基，祈求神靈喚回族人千年前那一段遺失的記憶。</string>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-Ba-5eU">
+                                        <rect key="frame" x="341" y="339" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50214484279141103" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="Star-26"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jy2-dL-5fk">
+                                        <rect key="frame" x="146" y="630" width="14" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.8065836372679045" green="0.1200982689372475" blue="0.0033106716300366369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已被收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkF-5W-m3X">
+                                        <rect key="frame" x="175" y="629" width="54" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.95676763803680986" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.042441526073619631" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDj-2s-2A0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="2648"/>
         </scene>
         <!--Artist View Controller-->
         <scene sceneID="IUa-IX-mna">
@@ -978,8 +1180,8 @@
                                 <rect key="frame" x="125" y="88" width="121" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Canvas"/>
                                     <segment title="ArtHub"/>
+                                    <segment title="Canvas"/>
                                 </segments>
                                 <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -1039,7 +1241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zy-7z-oDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432.8000000000002" y="2915.8920539730138"/>
+            <point key="canvasLocation" x="1833" y="1944"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zmr-wn-QBX">
@@ -1060,10 +1262,163 @@
             </objects>
             <point key="canvasLocation" x="201" y="1946"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="CnQ-os-7kO">
+            <objects>
+                <viewController id="EYR-ln-1KX" customClass="DetailViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ak-c9-3Ed"/>
+                        <viewControllerLayoutGuide type="bottom" id="jUZ-3P-bir"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YVD-cE-aFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-Lw-T1K" userLabel="Pop-up View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knJ-8U-lWW" userLabel="Close Button">
+                                        <rect key="frame" x="352" y="26" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Delete-48">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50230061349999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeDetail:" destination="EYR-ln-1KX" eventType="touchUpInside" id="XM1-n8-njP"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2017_千世界" translatesAutoresizingMaskIntoConstraints="NO" id="suy-hi-jVc">
+                                        <rect key="frame" x="0.0" y="49" width="375" height="282"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ke-Fe-wX0">
+                                        <rect key="frame" x="68" y="368" width="239" height="252"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">漂白水、壓克力顏料、鋁片、針線串珠拼貼於棉布，裱於仿麻布上。
+ 120.0 × 162.0 cm / 124.0 × 166.0 × 4.0  cm (framed), 2017
+
+千世界是梵文說明宇宙秩序的情形：由小、中、大等三種樣貌相同組成的「千世界」。每一塊矩陣條碼(QR Code)都代表著流變的時空地域。千世界就像一個萬花筒，鏡中的自我，究竟是自由地在鏡的另一端，抑或是困在鏡中？千萬別被幻象迷惑了，靜觀而後行。</string>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1P-Pk-Rm5">
+                                        <rect key="frame" x="341" y="339" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50214484280000005" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="Star-26"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eA-pR-iPK">
+                                        <rect key="frame" x="94" y="633" width="14" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5006710123" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="向藝術家購買  NT$50,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJg-Dq-flP">
+                                        <rect key="frame" x="123" y="629" width="157" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.95676763799999998" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.042441526069999999" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cS1-oZ-rT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3791" y="2648"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="vCM-Cv-s4k">
+            <objects>
+                <viewController id="A8o-fa-ldk" customClass="DetailViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ct4-UJ-cbg"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Du-wk-MWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l04-or-o3E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-2K-QqD" userLabel="Pop-up View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-rm-xF9" userLabel="Close Button">
+                                        <rect key="frame" x="352" y="26" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Delete-48">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50230061349999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeDetail:" destination="A8o-fa-ldk" eventType="touchUpInside" id="d0O-Yo-ReT"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳硯平_2017_漂泊廣場之五" translatesAutoresizingMaskIntoConstraints="NO" id="2Ry-4y-FFy">
+                                        <rect key="frame" x="0.0" y="49" width="375" height="282"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMv-vA-5a1">
+                                        <rect key="frame" x="68" y="368" width="238.5" height="183.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">漂白水、壓克力顏料、鋁片、針線串珠拼貼於棉布，裱於仿麻布上。
+ 45.5 × 53.0 cm / 49.5 × 57.0 × 4.0 cm (framed), 10F, 2017
+
+平面上的多色線，可以解釋成延伸中的生命，紅、黑、白、灰、金，構成美麗複雜的色塊，相互彼此凝視著。</string>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lso-g0-Q7j">
+                                        <rect key="frame" x="341" y="339" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50214484280000005" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="Star-26"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Akt-NG-ajT">
+                                        <rect key="frame" x="94" y="632" width="14" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="藏家拍賣中  NT$70,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOL-NK-9LR">
+                                        <rect key="frame" x="123" y="629" width="157" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.95676763799999998" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.042441526069999999" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQw-oe-r1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4471" y="2648"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ChineseHerbalBath_YvonneLu_07" width="600" height="400"/>
         <image name="DeepArt" width="201" height="108"/>
+        <image name="Delete-48" width="30" height="30"/>
         <image name="Egon Schiele, Mutter und Tochter" width="394" height="599"/>
         <image name="Egon Schiele, Self-Portrait with Chinese Lantern Plant" width="800" height="644"/>
         <image name="Egon Schiele, Self-portrait" width="1576" height="2305"/>
@@ -1078,6 +1433,7 @@
         <image name="Pierre_Auguste_Renoir_Portrait_of_Charles_and_Georges_Durand_Ruel" width="742" height="600"/>
         <image name="SLR Camera-50" width="25" height="25"/>
         <image name="Shooting Stars-50" width="25" height="25"/>
+        <image name="Star-26" width="26" height="26"/>
         <image name="Van_Gogh_Portrait_of_Pere_Tanguy" width="540" height="679"/>
         <image name="Van_Gogh_Road_with_Cypress_and_Star" width="934" height="1198"/>
         <image name="Van_Gogh_Self_Portrait_With_Bandaged_Ear" width="522" height="643"/>
@@ -1087,8 +1443,13 @@
         <image name="thin_circle" width="100" height="100"/>
         <image name="vangogh_cafe" width="803" height="1018"/>
         <image name="wave" width="450" height="310"/>
+        <image name="機械新秩序 PART 1 — 陳硯平個展" width="1024" height="768"/>
         <image name="迷景考" width="765" height="768"/>
         <image name="陳硯平1" width="1024" height="768"/>
+        <image name="陳硯平_2016_迴陣漫步" width="1024" height="768"/>
+        <image name="陳硯平_2016_預兆" width="1024" height="768"/>
+        <image name="陳硯平_2017_千世界" width="1024" height="768"/>
+        <image name="陳硯平_2017_漂泊廣場之五" width="1024" height="768"/>
         <image name="陳硯平_盤古" width="400" height="300"/>
         <image name="電影- 《埃貢·席勒：死神和少女 Egon Schiele- Tod und Mädchen (2016)》" width="620" height="877"/>
     </resources>
