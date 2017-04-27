@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 class PaintingsTableViewController: UITableViewController {
-    
+
     // receive image from ChooseViewController.swift
     var photoToPaintingsTableViewController: UIImage!{
         didSet {
@@ -39,11 +39,22 @@ class PaintingsTableViewController: UITableViewController {
         }
     }
     
+   
+    @IBOutlet weak var paintingView1: UIView!
+    @IBOutlet weak var paintingView2: UIView!
+    @IBOutlet weak var paintingView3: UIView!
+    @IBOutlet weak var paintingView4: UIView!
+    @IBOutlet weak var paintingView5: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         photoToUpload?.image = photoToPaintingsTableViewController
-        photoToUpload?.isHidden = false
-        print()
+        photoToUpload?.isHidden = true
+        addShadowToView(view: paintingView1)
+        addShadowToView(view: paintingView2)
+        addShadowToView(view: paintingView3)
+        addShadowToView(view: paintingView4)
+        addShadowToView(view: paintingView5)
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,5 +94,12 @@ class PaintingsTableViewController: UITableViewController {
             s.append(String(arc4random()))
         }
         return s
+    }
+    
+    func addShadowToView(view: UIView){
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize(width: 0, height: 1)
+        view.layer.shadowRadius = 1
     }
 }
