@@ -25,7 +25,8 @@ class transformedTableViewController: UITableViewController {
     }
     
     func load(){
-        let requestUrl = "http://localhost:3000/transformed/" + requestImageName + ".jpg"
+        let requestUrl = "http://localhost:3000/imagesToApp/" + requestImageName + ".jpg"
+        //let requestUrl = "http://localhost:3000/imagesToApp/3203448679411755359151543354439448110663752247945.jpg"
         request = Alamofire.request( requestUrl, method: .get)
             .downloadProgress { progress in
                 print("Download Progress: \(progress.fractionCompleted)")
@@ -46,7 +47,7 @@ class transformedTableViewController: UITableViewController {
     }
     
     func requestAgain(){
-        if requestHowManyTimes < 5 {
+        if requestHowManyTimes < 10 {
             Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.load), userInfo: nil, repeats: false)
         }
     

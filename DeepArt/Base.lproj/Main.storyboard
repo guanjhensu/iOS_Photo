@@ -21,9 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_white" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-yv-QaE">
+                            <imageView alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_white" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-yv-QaE">
                                 <rect key="frame" x="0.0" y="0.0" width="381" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="T5i-dd-cvo" appends="YES" id="hhR-yJ-eHD"/>
+                                    <outletCollection property="gestureRecognizers" destination="Trp-YE-mNu" appends="YES" id="Bf1-fx-LgC"/>
+                                    <outletCollection property="gestureRecognizers" destination="axH-Gh-QZT" appends="YES" id="278-lo-cTc"/>
+                                    <outletCollection property="gestureRecognizers" destination="aRC-AB-tPZ" appends="YES" id="Vdb-4j-i48"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vangogh_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-rl-s53">
                                 <rect key="frame" x="102" y="6" width="273" height="364"/>
@@ -58,23 +65,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR7-lX-4Zj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="306" y="548" width="69" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="FMA-v4-PGA" kind="show" id="xAx-Mv-woj"/>
-                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-Vb-4M9">
-                                <rect key="frame" x="329" y="552" width="13" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -84,8 +81,28 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnQ-ya-Eyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="T5i-dd-cvo">
+                    <connections>
+                        <segue destination="FMA-v4-PGA" kind="show" id="vnW-Ot-oZH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Trp-YE-mNu">
+                    <connections>
+                        <segue destination="FMA-v4-PGA" kind="show" id="pc5-Fq-mXs"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="axH-Gh-QZT">
+                    <connections>
+                        <segue destination="FMA-v4-PGA" kind="show" id="5fp-7X-6ty"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="aRC-AB-tPZ">
+                    <connections>
+                        <segue destination="FMA-v4-PGA" kind="show" id="V4k-yt-BGa"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3114.4000000000001" y="1095.2023988005999"/>
+            <point key="canvasLocation" x="893.60000000000002" y="858.62068965517244"/>
         </scene>
         <!--Camera-->
         <scene sceneID="tXM-yk-eOZ">
@@ -133,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uo0-Lr-DgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3849" y="1095"/>
+            <point key="canvasLocation" x="1665" y="859"/>
         </scene>
         <!--Choose View Controller-->
         <scene sceneID="fER-sT-qZt">
@@ -172,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vt-qT-PDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4517.6000000000004" y="1093.4032983508246"/>
+            <point key="canvasLocation" x="2462" y="859"/>
         </scene>
         <!--Paintings Table View Controller-->
         <scene sceneID="U8p-X6-EBF">
@@ -241,7 +258,7 @@
                                                     <rect key="frame" x="276" y="18" width="60" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Van_Gogh_Road_with_Cypress_and_Star" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-8q-77O">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陳澄波_OCT1_35" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-8q-77O">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="91"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -329,14 +346,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTt-xN-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4518" y="1838"/>
+            <point key="canvasLocation" x="2462" y="1564"/>
         </scene>
         <!--Transformed Table View Controller-->
         <scene sceneID="Bal-Pd-sDn">
             <objects>
                 <tableViewController id="F3L-Ly-9Hl" customClass="transformedTableViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xMR-fQ-4kD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="660"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -490,10 +507,6 @@
                                                     <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="0.49857409892638038" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-rj-hUM">
-                                                    <rect key="frame" x="0.0" y="44" width="378" height="375"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOVIE TRAILER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1Q-O8-NcM">
                                                     <rect key="frame" x="112" y="2285" width="98" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -524,6 +537,10 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-rj-hUM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -541,7 +558,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWx-vi-cLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5244" y="1091.1544227886059"/>
+            <point key="canvasLocation" x="3244" y="855"/>
         </scene>
         <!--camera-->
         <scene sceneID="2gA-La-NcN">
@@ -549,7 +566,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ds-xP-3FM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="camera" image="SLR Camera-50" id="nnQ-aZ-jjh"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5od-HK-lGj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5od-HK-lGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50087471242331283" colorSpace="calibratedRGB"/>
@@ -561,7 +578,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZe-ng-IPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175.1999999999998" y="1095.2023988005999"/>
+            <point key="canvasLocation" x="116" y="859"/>
         </scene>
         <!--Explore-->
         <scene sceneID="XIX-dX-85t">
@@ -777,7 +794,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyT-nq-SYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.60000000000002" y="1944.3778110944529"/>
+            <point key="canvasLocation" x="116" y="1943"/>
         </scene>
         <!--Profile-->
         <scene sceneID="C2w-we-YHF">
@@ -810,7 +827,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyN-17-nd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="3197"/>
+            <point key="canvasLocation" x="116" y="3595"/>
         </scene>
         <!--Canvas-->
         <scene sceneID="rK7-q4-q1D">
@@ -844,7 +861,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ya3-Y1-vad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469.5999999999999" y="2647.826086956522"/>
+            <point key="canvasLocation" x="455" y="2648"/>
         </scene>
         <!--ArtHub-->
         <scene sceneID="uBR-zC-NQc">
@@ -1016,7 +1033,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3x-5t-XcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="2648"/>
+            <point key="canvasLocation" x="1279" y="2648"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="dYz-vG-Iw0">
@@ -1092,7 +1109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDj-2s-2A0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3113" y="2648"/>
+            <point key="canvasLocation" x="2119" y="2704"/>
         </scene>
         <!--Artist View Controller-->
         <scene sceneID="IUa-IX-mna">
@@ -1175,7 +1192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zy-7z-oDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833" y="1944"/>
+            <point key="canvasLocation" x="894" y="1943"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zmr-wn-QBX">
@@ -1200,7 +1217,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSm-tI-POs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="1946"/>
+            <point key="canvasLocation" x="-826" y="1944"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="CnQ-os-7kO">
@@ -1276,7 +1293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS1-oZ-rT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3791" y="2648"/>
+            <point key="canvasLocation" x="2796" y="2704"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="vCM-Cv-s4k">
@@ -1352,7 +1369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQw-oe-r1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4471" y="2648"/>
+            <point key="canvasLocation" x="3476" y="2704"/>
         </scene>
     </scenes>
     <resources>
@@ -1378,6 +1395,7 @@
         <image name="vangogh_cafe" width="803" height="1018"/>
         <image name="機械新秩序 PART 1 — 陳硯平個展" width="1024" height="768"/>
         <image name="迷景考" width="765" height="768"/>
+        <image name="陳澄波_OCT1_35" width="979" height="768"/>
         <image name="陳硯平1" width="1024" height="768"/>
         <image name="陳硯平_2016_迴陣漫步" width="1024" height="768"/>
         <image name="陳硯平_2016_預兆" width="1024" height="768"/>
@@ -1386,4 +1404,7 @@
         <image name="陳硯平_盤古" width="400" height="300"/>
         <image name="電影- 《埃貢·席勒：死神和少女 Egon Schiele- Tod und Mädchen (2016)》" width="620" height="877"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5fp-7X-6ty"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -27,7 +27,8 @@ class PaintingsTableViewController: UITableViewController {
     @IBAction func chooseEgonSchiele(_ sender: Any) {
         whichPaintingChosen = "EgonSchieleHouseWithDryingLaundry"
         let randomImageName: String = randomString(length: 5)
-        upload(image: photoToUpload.image!, name: randomImageName)
+    
+        upload(image: photoToUpload.image!.resized(withPercentage: 0.2)!, name: randomImageName)
         imageNameGenerated = randomImageName
     }
     
@@ -101,5 +102,22 @@ class PaintingsTableViewController: UITableViewController {
         view.layer.shadowOpacity = 0.5
         view.layer.shadowOffset = CGSize(width: 0, height: 1)
         view.layer.shadowRadius = 1
+    }
+}
+
+extension UIImage {
+    func resized(withPercentage percentage: CGFloat) -> UIImage? {
+        let canvasSize = CGSize(width: size.width * percentage, height: size.height * percentage)
+        UIGraphicsBeginImageContextWithOptions(canvasSize, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        draw(in: CGRect(origin: .zero, size: canvasSize))
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    func resized(toWidth width: CGFloat) -> UIImage? {
+        let canvasSize = CGSize(width: width, height: CGFloat(ceil(width/size.width * size.height)))
+        UIGraphicsBeginImageContextWithOptions(canvasSize, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        draw(in: CGRect(origin: .zero, size: canvasSize))
+        return UIGraphicsGetImageFromCurrentImageContext()
     }
 }
