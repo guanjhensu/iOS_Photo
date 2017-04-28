@@ -9,6 +9,8 @@
 import UIKit
 
 class MainPageTableViewController: UITableViewController {
+    
+    @IBOutlet weak var exhibitionView: UIView!
     @IBAction func exhibitionLink(_ sender: Any) {
         if let url = URL(string: "http://www.inriver.com.tw/other/index.aspx?shop=inriver&kind=2&kind2=2") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -18,6 +20,8 @@ class MainPageTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        exhibitionView.addShadowToView()
+        
         //ArtHubButton.layer.borderColor = UIColor(red: 0x99, green: 0x66, blue: 0x00, a: 0.26).cgColor
         
 
@@ -27,6 +31,7 @@ class MainPageTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 }
 
 extension UIColor {

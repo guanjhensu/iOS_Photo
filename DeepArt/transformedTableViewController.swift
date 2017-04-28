@@ -14,12 +14,16 @@ class transformedTableViewController: UITableViewController {
 
     @IBOutlet weak var transformedImageView: UIImageView!
 
+    @IBOutlet weak var movieView: UIView!
+    @IBOutlet weak var museumView: UIView!
     var request: Alamofire.Request?
     var requestHowManyTimes: Int = 0
     var requestImageName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        museumView.addShadowToView()
+        movieView.addShadowToView()
         load()
         
     }

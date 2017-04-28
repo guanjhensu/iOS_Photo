@@ -196,7 +196,7 @@
             <objects>
                 <tableViewController id="Fo8-A9-FEO" customClass="PaintingsTableViewController" customModule="DeepArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TgP-Wo-Djz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="660"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
@@ -359,15 +359,15 @@
                         <sections>
                             <tableViewSection id="Zpy-QF-278">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="2472" id="ob7-pP-ah5">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2472"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="2726" id="ob7-pP-ah5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2726"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ob7-pP-ah5" id="Hlj-ik-9vR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="2472"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="2726"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_white" translatesAutoresizingMaskIntoConstraints="NO" id="uDR-7w-8pv">
-                                                    <rect key="frame" x="1" y="8" width="377" height="2566"/>
+                                                    <rect key="frame" x="1" y="8" width="377" height="2799"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DeepArt" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-lD-Lf7">
@@ -404,11 +404,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egon Schiele, Self-Portrait with Chinese Lantern Plant" translatesAutoresizingMaskIntoConstraints="NO" id="ScT-eD-CjB">
-                                                    <rect key="frame" x="170" y="869" width="188" height="142"/>
+                                                    <rect key="frame" x="170" y="914" width="188" height="142"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Self-Portrait with  Chinese Lantern Plant" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2o-gf-xjV">
-                                                    <rect key="frame" x="-20" y="917" width="172" height="47"/>
+                                                    <rect key="frame" x="-20" y="962" width="172" height="47"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
@@ -421,37 +421,38 @@
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45L-Rk-FBc">
+                                                    <rect key="frame" x="16" y="1210" width="345" height="438"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leopold museum" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-uM-99N">
-                                                    <rect key="frame" x="14" y="1147" width="304" height="177"/>
+                                                    <rect key="frame" x="15" y="1277" width="304" height="177"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leopold Museum, Vienna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-PT-SM8">
-                                                    <rect key="frame" x="128" y="1403" width="224" height="21"/>
+                                                    <rect key="frame" x="129" y="1533" width="224" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home to the largest and most eminent  Schiele collection in the world" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzC-Tx-xIg">
-                                                    <rect key="frame" x="129" y="1427" width="231" height="35"/>
+                                                    <rect key="frame" x="130" y="1557" width="231" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egon Schiele, Mutter und Tochter" translatesAutoresizingMaskIntoConstraints="NO" id="qND-Mz-Ga0">
-                                                    <rect key="frame" x="170" y="1656" width="188" height="142"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current | Exhibition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3L-wW-efs">
+                                                    <rect key="frame" x="131" y="1595" width="118" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mother and Daughter" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnj-VO-pnA">
-                                                    <rect key="frame" x="3" y="1717" width="150" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                    <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="0.49857409889999998" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-iu-asA">
-                                                    <rect key="frame" x="14" y="1075" width="344" height="443"/>
+                                                    <rect key="frame" x="15" y="1205" width="344" height="443"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <state key="normal">
@@ -461,61 +462,61 @@
                                                         <action selector="linkToLeopoldMuseum:" destination="F3L-Ly-9Hl" eventType="touchUpInside" id="tNV-Lh-LTU"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current | Exhibition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3L-wW-efs">
-                                                    <rect key="frame" x="130" y="1465" width="118" height="17"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egon Schiele, Mutter und Tochter" translatesAutoresizingMaskIntoConstraints="NO" id="qND-Mz-Ga0">
+                                                    <rect key="frame" x="171" y="1855" width="188" height="142"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                                    <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="0.49857409889999998" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mother and Daughter" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnj-VO-pnA">
+                                                    <rect key="frame" x="4" y="1916" width="150" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-vw-hYz">
-                                                    <rect key="frame" x="8" y="1932" width="270" height="170"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-yQ-Kim">
+                                                    <rect key="frame" x="16" y="2484" width="343" height="185"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <string key="text">Egon Schiele, a genius who was meant to change the history of art. He fully expressed the anxiety of humanity before the WWI. Even until the moment he was dying, he was still painting the sketch of his wife. He was only 28 years old by that time.</string>
-                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="電影- 《埃貢·席勒：死神和少女 Egon Schiele- Tod und Mädchen (2016)》" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-wf-5vk">
-                                                    <rect key="frame" x="227" y="2182" width="131" height="96"/>
+                                                    <rect key="frame" x="228" y="2492" width="131" height="168"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egon Schiele:  Tod und Mädchen" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Em-i9-aZx">
-                                                    <rect key="frame" x="60" y="2152" width="150" height="60"/>
+                                                    <rect key="frame" x="61" y="2498" width="150" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="His art is provoking.  Women are his obsession.  His love breaks taboos." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUv-nu-cp5">
-                                                    <rect key="frame" x="12" y="2201" width="198" height="68"/>
+                                                    <rect key="frame" x="13" y="2547" width="198" height="68"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kRR-AN-qCj">
-                                                    <rect key="frame" x="113" y="2303" width="96" height="1"/>
+                                                    <rect key="frame" x="114" y="2649" width="96" height="1"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="110 min | 2016 | Austria" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxF-6R-xSY">
-                                                    <rect key="frame" x="55" y="2261" width="155" height="21"/>
+                                                    <rect key="frame" x="56" y="2607" width="155" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.20000000000000001" alpha="0.49857409892638038" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOVIE TRAILER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1Q-O8-NcM">
-                                                    <rect key="frame" x="112" y="2285" width="98" height="18"/>
+                                                    <rect key="frame" x="113" y="2631" width="98" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-0X-QU1">
-                                                    <rect key="frame" x="37" y="2135" width="321" height="191"/>
+                                                    <rect key="frame" x="38" y="2481" width="321" height="191"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <state key="normal">
@@ -526,14 +527,14 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MORE INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-tZ-qfD">
-                                                    <rect key="frame" x="275" y="1483" width="77" height="17"/>
+                                                    <rect key="frame" x="276" y="1613" width="77" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkD-te-52k">
-                                                    <rect key="frame" x="274" y="1501" width="78" height="1"/>
+                                                    <rect key="frame" x="275" y="1631" width="78" height="1"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
                                                 </view>
@@ -541,6 +542,15 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-vw-hYz">
+                                                    <rect key="frame" x="16" y="2190" width="270" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Egon Schiele, a genius who was meant to change the history of art. He fully expressed the anxiety of humanity before the WWI. Even until the moment he was dying, he was still painting the sketch of his wife. He was only 28 years old by that time.</string>
+                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -553,12 +563,14 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="movieView" destination="BfC-yQ-Kim" id="tYH-zD-n9y"/>
+                        <outlet property="museumView" destination="45L-Rk-FBc" id="Ypg-ps-rXp"/>
                         <outlet property="transformedImageView" destination="fnx-rj-hUM" id="xnT-EE-gfy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWx-vi-cLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3244" y="855"/>
+            <point key="canvasLocation" x="3244" y="854.1229385307347"/>
         </scene>
         <!--camera-->
         <scene sceneID="2gA-La-NcN">
@@ -712,12 +724,17 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
                                                 </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbj-Sy-zpU">
+                                                    <rect key="frame" x="8" y="1342" width="359" height="230"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="迷景考" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-Ao-pSZ">
-                                                    <rect key="frame" x="15" y="1398" width="229" height="128"/>
+                                                    <rect key="frame" x="8" y="1342" width="230" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dl-fV-WfS">
-                                                    <rect key="frame" x="252" y="1393" width="103" height="21"/>
+                                                    <rect key="frame" x="246" y="1361" width="103" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.0" alpha="0.8000982553680982" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
@@ -725,21 +742,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="迷景 考" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-A6-meh">
-                                                    <rect key="frame" x="252" y="1418" width="78" height="29"/>
+                                                    <rect key="frame" x="246" y="1383" width="78" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黃柏勳 | 鹿向夷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH7-ys-Wi4">
-                                                    <rect key="frame" x="252" y="1444" width="105" height="22"/>
+                                                    <rect key="frame" x="246" y="1411" width="105" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iON-UI-btp">
-                                                    <rect key="frame" x="249" y="1462" width="117.5" height="51.5"/>
+                                                    <rect key="frame" x="243" y="1432" width="117.5" height="51.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
@@ -760,21 +777,22 @@
                                                     </attributedString>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-3q-1z6">
+                                                    <rect key="frame" x="246" y="1521" width="75" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MORE INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1X-yN-EbM">
-                                                    <rect key="frame" x="252" y="1521" width="77" height="17"/>
+                                                    <rect key="frame" x="246" y="1503" width="77" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.50703364647239269" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-3q-1z6">
-                                                    <rect key="frame" x="253" y="1540" width="75" height="1"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="0.5012821127" colorSpace="calibratedRGB"/>
-                                                </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij9-ic-9fq">
-                                                    <rect key="frame" x="8" y="1342" width="360" height="246"/>
+                                                    <rect key="frame" x="8" y="1344" width="359" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <connections>
                                                         <action selector="exhibitionLink:" destination="XZ0-2c-BiD" eventType="touchUpInside" id="GSE-1c-HO8"/>
                                                     </connections>
@@ -791,10 +809,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Explore" image="Shooting Stars-50" id="a07-jK-YET"/>
+                    <connections>
+                        <outlet property="exhibitionView" destination="rbj-Sy-zpU" id="jRx-V7-Opy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyT-nq-SYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="1943"/>
+            <point key="canvasLocation" x="116" y="1942.5787106446778"/>
         </scene>
         <!--Profile-->
         <scene sceneID="C2w-we-YHF">

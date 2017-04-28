@@ -51,11 +51,11 @@ class PaintingsTableViewController: UITableViewController {
         super.viewDidLoad()
         photoToUpload?.image = photoToPaintingsTableViewController
         photoToUpload?.isHidden = true
-        addShadowToView(view: paintingView1)
-        addShadowToView(view: paintingView2)
-        addShadowToView(view: paintingView3)
-        addShadowToView(view: paintingView4)
-        addShadowToView(view: paintingView5)
+        paintingView1.addShadowToView()
+        paintingView2.addShadowToView()
+        paintingView3.addShadowToView()
+        paintingView4.addShadowToView()
+        paintingView5.addShadowToView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,11 +97,14 @@ class PaintingsTableViewController: UITableViewController {
         return s
     }
     
-    func addShadowToView(view: UIView){
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 0.5
-        view.layer.shadowOffset = CGSize(width: 0, height: 1)
-        view.layer.shadowRadius = 1
+}
+
+extension UIView {
+    func addShadowToView(){
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.layer.shadowRadius = 1
     }
 }
 
