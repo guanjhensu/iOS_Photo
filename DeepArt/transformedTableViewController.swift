@@ -14,16 +14,20 @@ class transformedTableViewController: UITableViewController {
 
     @IBOutlet weak var transformedImageView: UIImageView!
 
+    @IBOutlet weak var ChengFoundationView: UIView!
     @IBOutlet weak var movieView: UIView!
     @IBOutlet weak var museumView: UIView!
+    @IBOutlet weak var ChengExhibitionView: UIView!
     var request: Alamofire.Request?
     var requestHowManyTimes: Int = 0
     var requestImageName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        museumView.addShadowToView()
-        movieView.addShadowToView()
+        //museumView.addShadowToView()
+        //movieView.addShadowToView()
+        ChengExhibitionView.addShadowToView()
+        ChengFoundationView.addShadowToView()
         load()
         
     }
@@ -57,7 +61,18 @@ class transformedTableViewController: UITableViewController {
     
     }
     
+
+    @IBAction func linkToChengExhibition(_ sender: Any) {
+        if let url = URL(string: "https://www.facebook.com/events/1605490479478390/") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     
+    @IBAction func linkToFoundation(_ sender: Any) {
+        if let url = URL(string: "http://chenchengpo.dcam.wzu.edu.tw/~chenchengpo/index.php") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     @IBAction func linkToLeopoldMuseum(_ sender: Any) {
         if let url = URL(string: "http://www.leopoldmuseum.org/en/exhibitions/48/egon-schiele") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)

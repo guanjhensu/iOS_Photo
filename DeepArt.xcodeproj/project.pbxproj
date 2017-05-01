@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650059F51EB59070005EC09D /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650059F41EB59070005EC09D /* DonateViewController.swift */; };
 		6561F9B31EAF4FD700AD9244 /* MainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561F9B21EAF4FD700AD9244 /* MainPageTableViewController.swift */; };
 		657DEA371E71B393008173B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DEA361E71B393008173B2 /* AppDelegate.swift */; };
 		657DEA391E71B393008173B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DEA381E71B393008173B2 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		3C7F0BF9959A23D29BA5742C /* Pods-DeepArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeepArt/Pods-DeepArt.release.xcconfig"; sourceTree = "<group>"; };
+		650059F41EB59070005EC09D /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		6561F9B21EAF4FD700AD9244 /* MainPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageTableViewController.swift; sourceTree = "<group>"; };
 		657DEA331E71B392008173B2 /* DeepArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657DEA361E71B393008173B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				657DEA3D1E71B393008173B2 /* Assets.xcassets */,
 				657DEA3F1E71B393008173B2 /* LaunchScreen.storyboard */,
 				657DEA421E71B393008173B2 /* Info.plist */,
+				650059F41EB59070005EC09D /* DonateViewController.swift */,
 			);
 			path = DeepArt;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */,
 				6561F9B31EAF4FD700AD9244 /* MainPageTableViewController.swift in Sources */,
 				65E448DA1EB0850B00A15557 /* DimmingPresentationController.swift in Sources */,
+				650059F51EB59070005EC09D /* DonateViewController.swift in Sources */,
 				65E448D41EB0684A00A15557 /* ArtHubTableViewController.swift in Sources */,
 				65E448D81EB081DF00A15557 /* DetailViewController.swift in Sources */,
 				65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */,

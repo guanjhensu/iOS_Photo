@@ -32,6 +32,13 @@ class PaintingsTableViewController: UITableViewController {
         imageNameGenerated = randomImageName
     }
     
+    @IBAction func chooseCheng(_ sender: Any) {
+        whichPaintingChosen = "Cheng_OCT1_35"
+        let randomImageName: String = randomString(length: 5)
+        
+        upload(image: photoToUpload.image!.resized(withPercentage: 0.4)!, name: randomImageName)
+        imageNameGenerated = randomImageName
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sendChosenPainging" {
             let controller = segue.destination as! transformedTableViewController
