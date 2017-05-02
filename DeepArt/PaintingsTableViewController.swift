@@ -28,7 +28,7 @@ class PaintingsTableViewController: UITableViewController {
         whichPaintingChosen = "EgonSchieleHouseWithDryingLaundry"
         let randomImageName: String = randomString(length: 5)
     
-        upload(image: photoToUpload.image!.resized(withPercentage: 0.2)!, name: randomImageName)
+        upload(image: photoToUpload.image!.resized(withPercentage: 1.0)!, name: randomImageName)
         imageNameGenerated = randomImageName
     }
     
