@@ -12,15 +12,16 @@ import Alamofire
 
 class transformedTableViewController: UITableViewController {
 
-    @IBOutlet weak var transformedImageView: UIImageView!
-
+    @IBOutlet weak var transformedImageView: UIImageView?
+    
+    var uploadImage: UIImage!
+    var modelName: String!
+    
     @IBOutlet weak var ChengFoundationView: UIView!
     @IBOutlet weak var movieView: UIView!
     @IBOutlet weak var museumView: UIView!
     @IBOutlet weak var ChengExhibitionView: UIView!
-    var request: Alamofire.Request?
-    var requestHowManyTimes: Int = 0
-    var requestImageName: String = ""
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +29,46 @@ class transformedTableViewController: UITableViewController {
         //movieView.addShadowToView()
         ChengExhibitionView.addShadowToView()
         ChengFoundationView.addShadowToView()
-        load()
+        
+        print("\(modelName)")
+        let randomImageName: String = modelName+"_____"+randomString(length: 5)
+        upload(image: (uploadImage.resized(withPercentage: 0.4)!), name: randomImageName)
+        
         
     }
+    // upload photo to server
+    func upload(image: UIImage, name: String) {
+        guard let imageData = UIImageJPEGRepresentation(image, 0.5) else {
+            print("Could not get JPEG representation of UIImage")
+            return
+        }
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(imageData,
+                                         withName: "upload",
+                                         fileName: name,
+                                         mimeType: "image/jpeg")
+                
+        },
+            to: "http://127.0.0.1:3000",
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON  { response in
+                        debugPrint(response)
+                        // style transfer success!
+                        self.load(requestImageName: name)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
+        })
+    }
     
-    func load(){
+    // load photo to client
+    func load(requestImageName: String){
         let requestUrl = "http://localhost:3000/imagesToApp/" + requestImageName + ".jpg"
-        //let requestUrl = "http://localhost:3000/imagesToApp/3203448679411755359151543354439448110663752247945.jpg"
-        request = Alamofire.request( requestUrl, method: .get)
+        Alamofire.request( requestUrl, method: .get)
             .downloadProgress { progress in
                 print("Download Progress: \(progress.fractionCompleted)")
             }
@@ -43,25 +76,23 @@ class transformedTableViewController: UITableViewController {
                 if let data = response.result.value {
                     let image = UIImage(data: data)
                     if image != nil {
-                        self.transformedImageView.image = image
+                        self.transformedImageView?.image = image
                         print("image load success")
                     } else {
-                        print("image hasn't been generated yet")
-                        self.requestHowManyTimes += 1
-                        self.requestAgain()
+                        print("fail to find transferred image")
                     }
                 }
         }
     }
     
-    func requestAgain(){
-        if requestHowManyTimes < 10 {
-            Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.load), userInfo: nil, repeats: false)
+    func randomString(length:Int) -> String {
+        var s: String = ""
+        for _ in (1...length) {
+            s.append(String(arc4random()))
         }
-    
+        return s
     }
     
-
     @IBAction func linkToChengExhibition(_ sender: Any) {
         if let url = URL(string: "https://www.facebook.com/events/1605490479478390/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -84,9 +115,6 @@ class transformedTableViewController: UITableViewController {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
-
-    
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
