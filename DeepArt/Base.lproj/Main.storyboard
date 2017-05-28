@@ -193,7 +193,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0w8-G1-XW8">
-                                <rect key="frame" x="0.0" y="458" width="375" height="660"/>
+                                <rect key="frame" x="0.0" y="667" width="375" height="547"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="Fo8-A9-FEO" kind="embed" identifier="chooseOnePainting" id="UP6-Xm-VQ8"/>
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vt-qT-PDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="859"/>
+            <point key="canvasLocation" x="2461.5999999999999" y="858.62068965517244"/>
         </scene>
         <!--Paintings Table View Controller-->
         <scene sceneID="U8p-X6-EBF">
@@ -374,7 +374,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTt-xN-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2461.5999999999999" y="1521.5892053973014"/>
+            <point key="canvasLocation" x="2462" y="1789"/>
         </scene>
         <!--Transformed Table View Controller-->
         <scene sceneID="Bal-Pd-sDn">
