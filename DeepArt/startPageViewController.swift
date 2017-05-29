@@ -13,16 +13,7 @@ class startPageViewController: UIViewController {
     @IBOutlet weak var landPagePainting: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        addShadow(view: landPagePainting)
-    }
-    
-    // add shadow to image
-    func addShadow(view: UIImageView){
-        var layer = view.layer
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize.zero
-        layer.shadowRadius = 10
+        landPagePainting.addShadowToView(alpha: 1.0, offsetWidth: 0, offsetHeight: 0, radius: 10)
     }
     
     override func didReceiveMemoryWarning() {

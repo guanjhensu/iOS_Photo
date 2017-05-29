@@ -20,7 +20,7 @@ class MainPageTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        exhibitionView.addShadowToView()
+        exhibitionView.addShadowToView(alpha: 0.5, offsetWidth: 0, offsetHeight: 1, radius: 1)
         
         //ArtHubButton.layer.borderColor = UIColor(red: 0x99, green: 0x66, blue: 0x00, a: 0.26).cgColor
         
