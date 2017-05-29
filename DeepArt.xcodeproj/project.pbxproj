@@ -14,7 +14,7 @@
 		657DEA3C1E71B393008173B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3A1E71B393008173B2 /* Main.storyboard */; };
 		657DEA3E1E71B393008173B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3D1E71B393008173B2 /* Assets.xcassets */; };
 		657DEA411E71B393008173B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DEA3F1E71B393008173B2 /* LaunchScreen.storyboard */; };
-		658EA3D01ED96FAD00DFB7A4 /* filterPaintingsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658EA3CF1ED96FAD00DFB7A4 /* filterPaintingsInfo.swift */; };
+		65A2A59E1EDAB94F00DEF2C1 /* StyleTransferredTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2A59D1EDAB94F00DEF2C1 /* StyleTransferredTableViewController.swift */; };
 		65A64A741E8CE926001DD5ED /* startPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A64A731E8CE926001DD5ED /* startPageViewController.swift */; };
 		65DE2C8C1E8B6C3C005999D9 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */; };
 		65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */; };
@@ -37,7 +37,7 @@
 		657DEA3D1E71B393008173B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657DEA401E71B393008173B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657DEA421E71B393008173B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		658EA3CF1ED96FAD00DFB7A4 /* filterPaintingsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = filterPaintingsInfo.swift; sourceTree = "<group>"; };
+		65A2A59D1EDAB94F00DEF2C1 /* StyleTransferredTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleTransferredTableViewController.swift; sourceTree = "<group>"; };
 		65A64A731E8CE926001DD5ED /* startPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startPageViewController.swift; sourceTree = "<group>"; };
 		65DE2C8B1E8B6C3C005999D9 /* ChooseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 		65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingsTableViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				65DEEE101E8B8B920014C6C9 /* PaintingsTableViewController.swift */,
 				65DEEE121E8B99B20014C6C9 /* transformedTableViewController.swift */,
 				657DEA381E71B393008173B2 /* ViewController.swift */,
-				658EA3CF1ED96FAD00DFB7A4 /* filterPaintingsInfo.swift */,
+				65A2A59D1EDAB94F00DEF2C1 /* StyleTransferredTableViewController.swift */,
 			);
 			name = styleTransfer;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				657DEA391E71B393008173B2 /* ViewController.swift in Sources */,
-				658EA3D01ED96FAD00DFB7A4 /* filterPaintingsInfo.swift in Sources */,
+				65A2A59E1EDAB94F00DEF2C1 /* StyleTransferredTableViewController.swift in Sources */,
 				65DEEE111E8B8B920014C6C9 /* PaintingsTableViewController.swift in Sources */,
 				657DEA371E71B393008173B2 /* AppDelegate.swift in Sources */,
 				65E448D21EB0589900A15557 /* artistViewController.swift in Sources */,
