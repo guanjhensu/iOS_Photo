@@ -30,7 +30,7 @@ class ChooseViewController: UIViewController {
         myScrollView = createFilterChooseBar(scrollview: myScrollView)
         self.view.addSubview(myScrollView)
         
-        for i in 0...7 {
+        for i in 0..<numberOfFilter {
             // make frame with shadow
             let whiteView = UIView(frame: CGRect(origin: CGPoint(x: (24 + i * 84),y: 0), size: CGSize(width: 60, height: 110)))
             whiteView.backgroundColor=UIColor.white
@@ -73,7 +73,7 @@ class ChooseViewController: UIViewController {
         // actual content size
         myScrollView.contentSize = CGSize(
             width: fullSize.width * 3,
-            height: fullSize.height * 0.8)
+            height: 112)
         myScrollView.showsHorizontalScrollIndicator = false
         myScrollView.showsVerticalScrollIndicator = false
         myScrollView.scrollsToTop = false

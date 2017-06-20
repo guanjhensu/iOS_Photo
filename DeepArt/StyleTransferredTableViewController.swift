@@ -40,6 +40,7 @@ class StyleTransferredTableViewController: UITableViewController {
                 
         },
             to: "http://127.0.0.1:3000",
+//            to: "http://10.43.232.9:3000",
             encodingCompletion: { encodingResult in
                 switch encodingResult {
                 case .success(let upload, _, _):
@@ -57,6 +58,7 @@ class StyleTransferredTableViewController: UITableViewController {
     // load photo to client
     func load(requestImageName: String){
         let requestUrl = "http://localhost:3000/imagesToApp/" + requestImageName + ".jpg"
+//        let requestUrl = "http://10.43.232.9:3000/imagesToApp/" + requestImageName + ".jpg"
         Alamofire.request( requestUrl, method: .get)
             .downloadProgress { progress in
                 print("Download Progress: \(progress.fractionCompleted)")
